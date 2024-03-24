@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    /*font*/
+ --font-family:'inter';
+ --font-size: 14px;
+ --font-weight-normal:400;
+ --font-weight-reguler:600;
+ --font-weight-bold:700;
+   /*color*/
+   --color-pink:pink;
+   --color-grey:grey;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(255, 231, 235);
+}
+#card {
+    background-color:var(--color-grey);
+    max-width:400px;
+    width:100%;
+    padding: 25px; 
+    border-radius: 10px;
+    margin: 100px auto;
+}
+#card>img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left:130px;
+    margin-top: 1.5rem;
+}
+h2 {
+    font-weight: var(--font-weight-reguler);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+h3 {
+    color: hsl(77, 47%, 3%);
+    font-size: 1rem;
+    font-weight:bold;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+  }
+p{
+  color: #fff;
+  text-align: center;
+}
+#card ul {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+#card ul li button {
+    background-color: hsl(0, 0%, 18%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 17px;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+   
+  #card ul li button:hover {
+    background-color:var(--color-pink);
+    color: hsl(0, 0%, 0%);
+    transform: scale(1.10);
+    opacity: 1;
+  }
